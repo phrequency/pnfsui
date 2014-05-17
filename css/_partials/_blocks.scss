@@ -1,0 +1,62 @@
+.descr-inner {
+	* {
+		float: none;
+	}
+	img {
+		max-width: 200px !important;
+		height: auto !important;
+		float: right;
+		margin-left: .75rem;
+		margin-bottom: .75rem;
+	}
+}
+
+.citem {
+	font-size: 0.9rem;
+	.item-inner {
+		position: relative;
+		> a {
+			display: block;
+			padding: 0.5rem 0.25rem;
+			position: relative;
+			&:after {
+				content: "";
+				display: block;
+				height: 1px;
+				background: rgba(#000,0.05);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			&:hover {
+				background: #ccc;
+			}
+		}
+		.descr {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			.descr-inner {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				border: 1px solid #ccc;
+				background: #fff;
+				padding: 1rem;
+				&:hover {
+					display: none;
+				}
+			}
+		}
+		&:hover {
+			.descr-inner {
+				display: block;
+				z-index: 1000;
+			}
+		}
+	}
+}

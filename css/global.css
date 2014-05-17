@@ -1,0 +1,143 @@
+/***** Font Definition for Open Sans. This stylesheet comes from qrohlf.com/posts/better-opensans *****/
+/* Regular */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-weight: 400;
+  font-style: normal; }
+/* Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-Italic-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");
+  font-weight: normal;
+  font-weight: 400;
+  font-style: italic; }
+/* Light */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-Light-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+/* Light Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-LightItalic-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-LightItalic-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+/* Semibold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-Semibold-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-Semibold-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-Semibold-webfont.svg#OpenSansSemibold") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+/* Semibold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-SemiboldItalic-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-SemiboldItalic-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-SemiboldItalic-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+/* Bold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+  font-weight: bold;
+  font-weight: 700;
+  font-style: normal; }
+/* Bold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-BoldItalic-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
+  font-weight: bold;
+  font-weight: 700;
+  font-style: italic; }
+/* Extra Bold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-ExtraBold-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-ExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-ExtraBold-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-ExtraBold-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+/* Extra Bold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot");
+  src: url("../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.woff") format("woff"), url("../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.ttf") format("truetype"), url("../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+body {
+  font-family: 'Open Sans', Arial, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #303030; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #f7f7f7; }
+
+.intro {
+  display: none; }
+
+.descr-inner * {
+  float: none; }
+.descr-inner img {
+  max-width: 200px !important;
+  height: auto !important;
+  float: right;
+  margin-left: .75rem;
+  margin-bottom: .75rem; }
+
+.citem {
+  font-size: 0.9rem; }
+  .citem .item-inner {
+    position: relative; }
+    .citem .item-inner > a {
+      display: block;
+      padding: 0.5rem 0.25rem;
+      position: relative; }
+      .citem .item-inner > a:after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.05);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+      .citem .item-inner > a:hover {
+        background: #ccc; }
+    .citem .item-inner .descr {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      .citem .item-inner .descr .descr-inner {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        border: 1px solid #ccc;
+        background: #fff;
+        padding: 1rem; }
+        .citem .item-inner .descr .descr-inner:hover {
+          display: none; }
+    .citem .item-inner:hover .descr-inner {
+      display: block;
+      z-index: 1000; }
