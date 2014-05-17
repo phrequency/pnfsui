@@ -1,1 +1,0 @@
-a:3:{s:3:"url";s:41:"http://www.drexel.edu/news/headlines/rss/";s:8:"feed_url";s:38:"http://www.drexel.edu/now/rss-releases";s:5:"build";s:14:"20090627192103";}
