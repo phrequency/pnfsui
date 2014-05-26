@@ -1,0 +1,32 @@
+
+
+@mixin triangle (
+$t: 5px,
+$r: 0,
+$b: 0,
+$l: 5px,
+$c1: transparent,
+$c2: transparent,
+$c3: transparent,
+$c4: darken($blue,10%)
+	) {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: $t $r $b $l;
+	border-color: $c1 $c2 $c3 $c4;
+}
+
+@mixin boxshad(
+$l: 0,
+$t: 2px,
+$b: 2px,
+$c: #000,
+$o: 0.3
+	) {
+-webkit-box-shadow: $l $t $b 0 rgba($c, $o);
+-moz-box-shadow:    $l $t $b 0 rgba($c, $o);
+box-shadow:         $l $t $b 0 rgba($c, $o);
+}

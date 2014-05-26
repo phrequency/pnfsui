@@ -1,0 +1,17 @@
+a {
+  -o-transition:color .1s ease-out, background .1s ease-in;
+  -ms-transition:color .1s ease-out, background .1s ease-in;
+  -moz-transition:color .1s ease-out, background .1s ease-in;
+  -webkit-transition:color .1s ease-out, background .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .1s ease-out, background .1s ease-in;
+}
+
+.descr-inner {
+  -o-transition:visibility .1s ease-out, opacity .1s ease-in;
+  -ms-transition:visibility .1s ease-out, opacity .1s ease-in;
+  -moz-transition:visibility .1s ease-out, opacity .1s ease-in;
+  -webkit-transition:visibility .1s ease-out, opacity .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:visibility .1s ease-out, opacity .1s ease-in;
+  }

@@ -88,20 +88,57 @@ ul {
   margin: 0;
   padding: 0; }
 
+a {
+  -o-transition: color .1s ease-out, background .1s ease-in;
+  -ms-transition: color .1s ease-out, background .1s ease-in;
+  -moz-transition: color .1s ease-out, background .1s ease-in;
+  -webkit-transition: color .1s ease-out, background .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition: color .1s ease-out, background .1s ease-in; }
+
+.descr-inner {
+  -o-transition: visibility .1s ease-out, opacity .1s ease-in;
+  -ms-transition: visibility .1s ease-out, opacity .1s ease-in;
+  -moz-transition: visibility .1s ease-out, opacity .1s ease-in;
+  -webkit-transition: visibility .1s ease-out, opacity .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition: visibility .1s ease-out, opacity .1s ease-in; }
+
 body {
-  background: #f7f7f7; }
+  background: #f1f1f1; }
 
 .intro {
   display: none; }
 
+.block.grid .column {
+  margin-bottom: 2rem; }
+
+.ui.sidebar {
+  top: 44px; }
+
+.chunk {
+  background: #f7f7f7;
+  border: 1px solid #ebebeb;
+  padding: 1rem;
+  margin: -1rem -1rem 2rem -1rem;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3); }
+
+.block .segment {
+  padding: 0.5rem; }
+
 .descr-inner * {
   float: none; }
 .descr-inner img {
-  max-width: 200px !important;
+  max-width: 180px !important;
   height: auto !important;
   float: right;
   margin-left: .75rem;
   margin-bottom: .75rem; }
+
+h3.title {
+  padding: 0 .5rem; }
 
 .citem {
   font-size: 0.9rem; }
@@ -109,7 +146,7 @@ body {
     position: relative; }
     .citem .item-inner > a {
       display: block;
-      padding: 0.5rem 0.25rem;
+      padding: 0.5rem;
       position: relative; }
       .citem .item-inner > a:after {
         content: "";
@@ -121,7 +158,7 @@ body {
         left: 0;
         right: 0; }
       .citem .item-inner > a:hover {
-        background: #ccc; }
+        background: #3e8ab5; }
     .citem .item-inner .descr {
       position: absolute;
       bottom: 0;
@@ -129,15 +166,59 @@ body {
       right: 0; }
       .citem .item-inner .descr .descr-inner {
         display: none;
+        opacity: 0;
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
-        border: 1px solid #ccc;
+        left: 5px;
+        right: -5px;
+        border: 1px solid #3e8ab5;
+        border-top: 5px solid #316d8f;
         background: #fff;
-        padding: 1rem; }
+        padding: 0.5rem;
+        font-size: 0.8rem; }
         .citem .item-inner .descr .descr-inner:hover {
           display: none; }
+        .citem .item-inner .descr .descr-inner .date {
+          display: block;
+          margin-top: 0.5rem;
+          font-size: 0.7rem;
+          color: rgba(0, 0, 0, 0.5);
+          clear: both; }
+    .citem .item-inner:hover:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: -5px;
+      bottom: 0;
+      width: 5px;
+      background: #316d8f; }
+    .citem .item-inner:hover:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 0 5px;
+      border-color: transparent transparent transparent #316d8f;
+      position: absolute;
+      top: 0;
+      right: -5px; }
+    .citem .item-inner:hover > a {
+      color: #fff;
+      position: relative; }
     .citem .item-inner:hover .descr-inner {
       display: block;
+      opacity: 1;
       z-index: 1000; }
+      .citem .item-inner:hover .descr-inner:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 0 5px;
+        border-color: #316d8f transparent transparent transparent;
+        position: absolute;
+        top: -5px;
+        left: -5px; }

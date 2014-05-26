@@ -19,10 +19,6 @@
 <link rel="icon" href="http://phillynewsfeeds.com/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon-precomposed" href="/img/touch-icon.png"/>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>    
-<script type="text/javascript" src="sui/javascript/semantic.min.js"></script>
-<script type="text/javascript" src="js/funcs.js"></script>
-
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

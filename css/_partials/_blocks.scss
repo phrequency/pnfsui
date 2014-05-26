@@ -1,14 +1,21 @@
+.block .segment {
+	padding: 0.5rem;
+}
 .descr-inner {
 	* {
 		float: none;
 	}
 	img {
-		max-width: 200px !important;
+		max-width: 180px !important;
 		height: auto !important;
 		float: right;
 		margin-left: .75rem;
 		margin-bottom: .75rem;
 	}
+}
+
+h3.title {
+	padding: 0 .5rem;
 }
 
 .citem {
@@ -17,7 +24,7 @@
 		position: relative;
 		> a {
 			display: block;
-			padding: 0.5rem 0.25rem;
+			padding: 0.5rem;
 			position: relative;
 			&:after {
 				content: "";
@@ -30,7 +37,7 @@
 				right: 0;
 			}
 			&:hover {
-				background: #ccc;
+				background: $blue;
 			}
 		}
 		.descr {
@@ -40,22 +47,74 @@
 			right: 0;
 			.descr-inner {
 				display: none;
+				opacity: 0;
 				position: absolute;
 				top: 0;
-				left: 0;
-				right: 0;
-				border: 1px solid #ccc;
+				left: 5px;
+				right: -5px;
+				border: 1px solid $blue;
+				border-top: 5px solid darken($blue,10%);
 				background: #fff;
-				padding: 1rem;
+				padding: 0.5rem;
+				font-size: 0.8rem;
 				&:hover {
 					display: none;
+				}
+				.date {
+					display: block;
+					margin-top: 0.5rem;
+					font-size: 0.7rem;
+					color: rgba(#000,0.5);
+					clear: both;
 				}
 			}
 		}
 		&:hover {
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 5px;
+				right: -5px;
+				bottom: 0;
+				width: 5px;
+				background: darken($blue,10%);
+			}
+			&:before {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 0 0 5px;
+				border-color: transparent transparent transparent darken($blue,10%);
+				position: absolute;
+				top: 0;
+				right: -5px;
+			}			
+			> a {
+				color: #fff;
+				position: relative;
+			}
 			.descr-inner {
 				display: block;
+				opacity: 1;
 				z-index: 1000;
+			&:before {
+				@include triangle (
+					$t: 5px,
+					$r: 0,
+					$b: 0,
+					$l: 5px,
+					$c1: darken($blue,10%),
+					$c2: transparent,
+					$c3: transparent,
+					$c4: transparent
+						);
+				position: absolute;
+				top: -5px;
+				left: -5px;
+			}				
 			}
 		}
 	}

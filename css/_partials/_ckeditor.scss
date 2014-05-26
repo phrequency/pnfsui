@@ -1,0 +1,121 @@
+.field-widget-text-textarea-with-summary {
+	.filter-wrapper { display: none; }
+}
+
+body.cke_show_borders {
+	text-align: left;
+	background: #fff;
+	img {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body.cke_show_borders {
+		margin-top: 0 !important;
+	}
+}
+
+.cke_skin_kama {
+	padding: 0 !important;
+	@include brad(0);
+	border: none !important;
+}
+
+.cke_skin_kama .cke_wrapper {
+	-moz-border-radius: 0 !important;
+	@include brad(0);
+	background-color: transparent !important;
+	background-image: none !important;
+	background-repeat: repeat-x !important;
+	background-position: 0 !important;
+	padding: 0 !important;
+}
+
+
+
+.cke_toolgroup {
+	white-space: normal !important;
+}
+
+html body.page-node-edit {
+	margin-top: 42px !important;
+}
+
+.field-name-body {
+	td.cke_contents {
+		height: 1200px !important;
+	}	
+	.cke_toolbox {
+		text-align: center;
+		position: fixed;
+		top: 28px;
+		left: 0;
+		right: 0;
+		@include boxshad;
+	}
+}
+
+.cke_toolbar {
+	float: none !important;
+	margin: 0 auto !important;
+	display: inline-block !important;
+}
+
+.cke_toolbox {
+	border: 1px solid #fefefe !important;
+	padding: 5px !important;
+	@include cf;
+	margin-bottom: 10px !important;
+	background: #f1f1f1 !important;
+}
+
+.cke_skin_kama .cke_focus
+{
+	outline: none !important; // #f1f1f1 solid 1px
+}
+
+.cke_toolbox_collapser {
+	float: none;
+	position: absolute;
+	top: -12px;
+	right: 0;
+	margin: 0 !important;
+}
+
+#node-form {
+	.node-form {
+		fieldset {
+			margin: 0;
+			padding: 10px 0;
+			border: none;
+			legend {
+				width: 100%;
+				margin: 0;
+				a {
+				display: block;
+				padding: 5px 10px;
+				margin-left: -20px;
+				font-size: 11px;
+				font-weight: bold;
+				text-transform: uppercase;
+				background: #333;
+				color: #fefefe;					
+				}
+			}
+		}
+		#edit-title-wrapper {
+			input[type="text"] {
+				font-size: 16px;
+				font-weight: bold;
+				border: 1px solid #ccc;
+				padding: 5px;
+			}
+		}
+		.teaser-checkbox {
+			font-size: 11px;
+			color: #666;
+		}
+	}
+}

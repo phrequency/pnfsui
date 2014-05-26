@@ -84,7 +84,7 @@ class newsblocks
 		$item_classname = 'tips';
 		$items = 10;
 		$language = $feed->get_language();
-		$length = 200;
+		$length = 700;
 		$more = 'More';
 		$more_move = false;
 		$more_fx = true;
@@ -159,13 +159,13 @@ class newsblocks
 
 		
 		// Open a <div> with a class of "block" (which we'll use for styling) and an id of some random value (for targetting via JavaScript)
-		$html = '<div class="' . $classname . '" id="' . $id . '"><div class="nb-inner">' . "\n";
+		$html = '<div class="column ' . $classname . '" id="' . $id . '" data-title="' . $title . '">' . "\n";
 		
 		// As long as we're supposed to show the title.
 		if ($show_title)
 		{
 			// Here's the name of the feed, formatted the way we want.
-			$html .= '<h3>'; // Header tag
+			$html .= '<h3 class="title">'; // Header tag
 			//$html .= '<img src="' . $favicon . '" width="16" height="16" /> '; // Favicon
 			if ($permalink) $html .= '<a href="' . $permalink . '" target="_blank">'; // Link (if available)
 			$html .= $title; // Title
@@ -185,7 +185,7 @@ class newsblocks
 				if ($feed->get_item_quantity() > $items)
 				{
 					// Add a little "More" link for people to click on.
-					$html .= '<p class="more"><a href="" class="more" id="m_' . $id . '">' . $more . '</a></p>' . "\n";
+					$html .= '<div class="more"><a href="javascript:void(0);" id="m_' . $id . '">' . $more . '</a></div>' . "\n";
 				}
 			}
 
@@ -296,7 +296,7 @@ foreach ($feed->get_items($counter_start, $counter_length) as $item)
 		}
 
 		// Close out of this <div> block.
-		$html .= '</div></div>' . "\n";
+		$html .= '</div>' . "\n";
 
 		// Return all of the HTML, so that we can display it as we choose or manipulate it further.
 		return $html;
@@ -324,14 +324,14 @@ foreach ($feed->get_items($counter_start, $counter_length) as $item)
 
 
 		// Open a <div> with a class of "block" (which we'll use for styling) and an id of some random value (for targetting via JavaScript)
-		$html = '<div class="' . $classname . '" id="' . $id . '"><div class="nb-inner">' . "\n";
+		$html = '<div class="column ' . $classname . '" id="' . $id . '" data-title="' . $title . '">' . "\n";
 		
 
 		// As long as we're supposed to show the title.
 		if ($show_title)
 		{
 			// Here's the name of the feed, formatted the way we want.
-			$html .= '<h3>'; // Header tag
+			$html .= '<h3 class="title">'; // Header tag
 			//$html .= '<img src="' . $favicon . '" width="16" height="16" /> '; // Favicon
 			if ($permalink) $html .= '<a href="' . $permalink . '" target="_blank">'; // Link (if available)
 			$html .= $title; // Title
@@ -351,7 +351,7 @@ foreach ($feed->get_items($counter_start, $counter_length) as $item)
 				if ($feed->get_item_quantity() > $items)
 				{
 					// Add a little "More" link for people to click on.
-					$html .= '<p class="more"><a href="" class="more" id="m_' . $id . '">' . $more . '</a></p>' . "\n";
+					$html .= '<div class="more"><a href="javascript:void(0);" class="more" id="m_' . $id . '">' . $more . '</a></div>' . "\n";
 				}
 			}
 
@@ -432,7 +432,7 @@ foreach ($feed->get_items($counter_start, $counter_length) as $item)
 		}
 
 		// Close out of this <div> block.
-		$html .= '</div></div>' . "\n";
+		$html .= '</div>' . "\n";
 
 		// Return all of the HTML, so that we can display it as we choose or manipulate it further.
 		return $html;
@@ -457,7 +457,7 @@ function quickie($url, $options = null)
 		if ($show_title)
 		{
 			// Here's the name of the feed, formatted the way we want.
-			$html .= '<h3>'. $title .'</h3>' . "\n";
+			$html .= '<h3 class="title">'. $title .'</h3>' . "\n";
 		}
 
 		// Go through the same thing twice -- once for the primary, and once for the secondary.
@@ -541,13 +541,13 @@ function quickie($url, $options = null)
 		if (!$classname) $classname = 'nb-wide';
 
 		// Open a <div> with a class of "block" (which we'll use for styling) and an id of some random value (for targetting via JavaScript)
-		$html = '<div class="' . $classname . '" id="' . $id . '">' . "\n";
+		$html = '<div class="column ' . $classname . '" id="' . $id . '" data-title="' . $title . '">' . "\n";
 
 		// As long as we're supposed to show the title.
 		if ($show_title)
 		{
 			// Here's the name of the feed, formatted the way we want.
-			$html .= '<h3>'; // Header tag
+			$html .= '<h3 class="title">'; // Header tag
 			//$html .= '<img src="' . $favicon . '" width="16" height="16" /> '; // Favicon
 			if ($permalink) $html .= '<a href="' . $permalink . '" target="_blank">'; // Link (if available)
 			$html .= $title; // Title
@@ -609,13 +609,13 @@ COMIC
 		if (!$classname) $classname = 'nb-wide';
 
 		// Open a <div> with a class of "block" (which we'll use for styling) and an id of some random value (for targetting via JavaScript)
-		$html = '<div class="' . $classname . '" id="' . $id . '">' . "\n";
+		$html = '<div class="column ' . $classname . '" id="' . $id . '" data-title="' . $title . '">' . "\n";
 
 		// As long as we're supposed to show the title.
 		if ($show_title)
 		{
 			// Here's the name of the feed, formatted the way we want.
-			$html .= '<h3>'; // Header tag
+			$html .= '<h3 class="title">'; // Header tag
 			$html .= $title; // Title
 			$html .= '</h3>' . "\n"; // Close header
 		}
@@ -706,17 +706,17 @@ COMIC
 //		$title_attr .= $item->get_title(); // The title of the post
 //		$title_attr .= ' - '; // The separator between the title and the description (required by MooTools)
 		$title_attr .= newsblocks::cleanup($item->get_description(), $length); // The cleaned-up and shortened version of the description
-		$title_attr .= '<span class="date">'; // This marks the beginning of the date/domain line (and is CSS styleable)
 
 		// Does the item have a timestamp?
 		if ($item->get_local_date($date_format))
 		{
+			$title_attr .= '<span class="date">'; // This marks the beginning of the date/domain line (and is CSS styleable)
 			$title_attr .= $item->get_local_date($date_format); // Use the locale-friendly version for non-English languages.
-			$title_attr .= ' :: '; // Visual separator.
+			$title_attr .= '</span>'; // Mark the end of the date/domain line.
+			//$title_attr .= ' :: '; // Visual separator.
 		}
 
-		$title_attr .= newsblocks::name($parent->subscribe_url()); // The domain name that the item is coming from.
-		$title_attr .= '</span>'; // Mark the end of the date/domain line.
+		//$title_attr .= newsblocks::name($parent->subscribe_url()); // The domain name that the item is coming from.
 
 		return $title_attr;
 	}

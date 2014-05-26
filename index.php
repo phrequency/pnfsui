@@ -3,8 +3,8 @@
 		include 'partials/home/top.php';
 		// include 'partials/home/quickies.php';	
 		// include 'partials/home/weather.php';		
-		// include 'partials/home/business.php';
-		// include 'partials/home/law.php';
+		include 'partials/home/business.php';
+		include 'partials/home/law.php';
 		// include 'partials/home/sports.php';
 		// include 'partials/home/freepress.php';
 		// include 'partials/home/schools.php';
